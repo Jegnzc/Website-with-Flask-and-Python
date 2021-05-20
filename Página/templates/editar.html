@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/normalize.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/utilities.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/style.css') }}">
+
+    <title>App Center | Inicio</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="container flex">
+            <h1 class="logo">App Center, Inc.</h1>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../features.html">Plataforma en línea</a></li>
+                    <li><a href="../docs.html">Novedades</a></li>
+                    <li><a href="../ingresa.html">Ingresa</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Showcase -->
+
+
+    <section class="showcase">
+
+        <div class="container grid ingresos">
+            <div class="showcase-form card">
+                <h1 class="text-center">Editando Empleado</h1>
+                <form action="/update/{{empleado.0}}" method="POST">
+                    <div class="form-control">
+                        <input type="text" name="id" placeholder="Id" required value="{{empleado.1}}">
+                    </div>
+                    <div class="form-control">
+                        <input type="text" name="name" placeholder="Nombre" required value="{{empleado.2}}">
+                    </div>
+                    <div class="form-control">
+                        <input type="email" name="email" placeholder="Email" required value="{{empleado.3}}">
+                    </div>
+                    <div class="form-control">
+                        <input type="date" name="date" placeholder="Fecha"  value="{{empleado.4}}">
+                    </div>
+                    <input type="submit" value="Send" class="btn btn-primary">
+                </form>
+            </div>
+        </div>
+
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        {% for message in messages %}
+        <section class="docs-body p-5 my-10">
+            <div class="novedades grid-3">
+                <div class="mision card text-center">
+                    <h2>{{message}}</h2>
+
+                </div>
+            </div>
+        </section>
+        {% endfor %}
+        {% endif %}
+        {% endwith %}
+
+
+    </section>
+
+    <!-- Stats -->
+
+    <!-- Cli -->
+
+
+    <!-- Languages -->
+
+    <!-- Footer -->
+
+
+</body>
+
+</html>

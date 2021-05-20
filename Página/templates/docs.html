@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/normalize.css') }}">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/utilities.css') }}">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+
+    <title>App Center | Novedades</title>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <div class="navbar">
+      <div class="container flex">
+        <h1 class="logo">App Center, Inc.</h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="features.html">Plataforma en línea</a></li>
+            <li><a href="docs.html">Novedades</a></li>
+            <li><a href="ingresa.html">Ingresa</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Head -->
+
+    <section class="docs-head bg-primary py-3">
+      <div class="container grid">
+        <div>
+          <h1 class="xl">¡Conoce más sobre nosotros!</h1>
+          <p class="lead">
+            Somos un grupo de desarrolladores de software ambiciosos, que buscan la excelencia en cada uno de los proyectos en los que participamos
+          </p>
+        </div>
+        <img src="images/docs.png" alt="" />
+      </div>
+    </section>
+
+    <!-- Docs Main -->
+
+    <section class="docs-body bg-primary p-5">
+        <div class="novedades grid-3">
+          <div class="mision card">
+          <h1 class="text-center">Misión</h1>
+          <p class="text-center">
+            Somos una compañía tecnológica de la información, que ayuda 
+            a generar valor a sus clientes, buscando el cumplimiento de 
+            sus objetivos estratégicos mediante el uso de metodologías 
+            estructuradas y adaptables, la felicidad del cliente es nuestra felicidad,
+             siempre buscamos el máximo beneficio para nuestros 
+            clientes a través de la calidad de nuestras soluciones
+          </p>
+          <div class="alert alert-success text-center">
+            <i class="fas fa-info "></i> ¡Habla con uno de nuestros especialistas e infórmate!
+          </div>
+          <h1 class="text-center">Visión</h1>
+          <p class="text-center">
+            Ser reconocidos como una empresa con servicios de calidad, 
+            excelencia e integralidad. Ser percibidos como un aliado estratégico,
+             a través de la generación de valor y con un alto nivel de satisfacción
+              de sus clientes, empleados y socios.
+
+          </p>
+          
+          <h1 class="text-center">Valores</h1>
+          <h3 >Compromiso</h3>
+          <p>
+            Compartiendo conocimientos, experiencias y esfuerzo, para poder ofrecer el mejor servicio. Supone trabajar con liderazgo bajo un método, en un ambiente que promueva el enriquecimiento, en el cual se valoran y se respetan todas las opiniones e ideas.
+          </p>
+          <h3>Vocación</h3>
+          <p>
+            Ayudamos a pensar y a tomar decisiones cuando nuestros clientes se enfrentan a desafíos tecnológicos, porque creemos en las empresas. Nuestra principal motivación es conocer y satisfacer las necesidades, dando una respuesta rápida y eficaz a sus peticiones.
+          </p>
+          <h3>Pasión</h3>
+          <p>
+            Contando con esa fuerza interior implacable, que sale del corazón y del alma. Con elementos más trascendentales que el dinero o metas individuales. Soñamos con una organización con pasión dirigida a clientes, que se apartan de lo razonable para otros.
+          </p>
+          <h3>Honestidad</h3>
+          <p>
+            Con transparencia, honradez e integridad en nuestras relaciones del día a día, empezando por nosotros mismos y rechazando prácticas de negocio injustas, orientadas a obtener una ventaja particular y siendo ejemplo para los demás. Hacemos lo que sabemos…
+          </p>
+          <h3>¡Prueba nuestra nueva interfaz!</h3>
+          <p>Mac (Homebrew)</p>
+          <pre><code>$ brew install appcenter-cli</code></pre>
+
+          <p>Linux</p>
+          <pre><code>$ apt-get install appcenter-cli</code></pre>
+
+        </div>
+
+          
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="bg-dark py-5">
+      <div class="container grid grid-3">
+        <div>
+          <h1>App Center, Inc</h1>
+          <p>Copyrigth &copy; 2021</p>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="features.html">Plataforma en línea</a></li>
+            <li><a href="docs.html">Novedades</a></li>
+          </ul>
+        </nav>
+        <div class="social">
+          <a href="#"><i class="fab fa-github fa-2x"></i></a>
+          <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+          <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+          <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
